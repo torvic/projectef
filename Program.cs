@@ -4,7 +4,8 @@ using projectef;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AssignmentContext>(p => p.UseInMemoryDatabase("AssignmentDb"));
+//builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
+builder.Services.AddDbContext<AssignmentContext>();
 
 var app = builder.Build();
 

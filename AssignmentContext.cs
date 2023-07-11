@@ -10,4 +10,6 @@ public class AssignmentContext: DbContext
 
 	public AssignmentContext(DbContextOptions<AssignmentContext> options): base(options) {}
 
+	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseNpgsql(@"Host=localhost;Username=root;Password=root;Database=mydatabase");
 }
