@@ -1,15 +1,15 @@
 namespace projectef.models;
 
-public class Task
+public class Assignment
 {
-	public Guid TaskId { get; set; }
+	public Guid AssignmentId { get; set; }
 	public Guid CategoryId { get; set; }
 
 	public string Title { get; set; }
 
 	public string Description { get; set; }
 
-	public Priority TaskPriority { get; set; }
+	public Priority AssignmentPriority { get; set; }
 
 	public DateTime CreationDate { get; set; }
 
